@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parents et Ressources - L'Hôte Maison</title>
+  <link rel="icon" href="../Images/logo.webp" type="image/webp">
+        <link rel="stylesheet" href="..\Css\Affichage.css">
+        <link rel="stylesheet" href="..\Css\en-tete.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="..\Css\darkmode.css">
+        <script src="..\Javascript\darkmode.js" defer></script>
+        <script src="..\Javascript\script.js" defer></script>
+    </head>
+    <body>
+  <!-- Haut de la Page -->
+<header class="site-header">
+    <!-- Diaporama -->
+    <div class="slideshow">
+      <img src="..\Images\IMG_5216.png" alt="Slide 1" class="slide active">
+      <img src="..\Images\IMG_5217.png" alt="Slide 2" class="slide">
+      <img src="..\Images\IMG_5218.png" alt="Slide 3" class="slide">
+    </div>
+    <div class="logo-titre">
+      <a href="Jimmy.html" style="padding-right: 20px;"><img src="..\Images\logo.webp" alt="Logo L'hote Maison"></a>
+      <div class="texte-titre">
+        <a href="accueil.html" style="color: #ffd700; text-decoration: none;">
+        <h1>L'HÔTE MAISON - MAISON DE JEUNES</h1>
+        <div>Pour les jeunes de 12 à 17 ans dans Rosemont-La Petite-Patrie</div>
+        </a>
+      </div>
+    </div>
+
+
+    <nav id="main-nav" class="nav-bar">
+        <button class="menu-toggle" aria-label="Menu mobile" style="text-align: center;">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a>
+          <!-- Premier menu -->
+          <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu()">
+              <span id="arrow" class="arrow">▼</span>
+            </span>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Conseil_dadministration.html">Conseil d’administration</a>
+              <a href="équipe.html">Équipe</a>
+              <a href="partenaires.html">Partenaires</a>
+              <a href="Bilans_annuels.html">Bilans annuels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="bourse_jjr.html">Bourse JJR</a></li>
+        <li><a href="Activités_projets.html">Activités et projets</a>
+          <div class="dropdown">
+            <!-- Deuxième menu -->
+            <div class="dropdown">
+              <span class="dropdown-button" onclick="toggleMenu2()">
+                <span id="arrow2" class="arrow">▼</span>
+              </span>
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="Activités_sportives.html">Activités sportives</a>
+                <a href="Ateliers_dimprovisation.html">Ateliers d’improvisation</a>
+                <a href="Page erreur.html">Camp d’accueil PPS</a>
+                <a href="Conseil_des_jeunes.html">Conseil des jeunes</a>
+                <a href="Périodes libres.html">Périodes libres</a>
+                <a href="sérigraphie.html">Projet de sérigraphie</a>
+                <a href="Projet Musical.html">Projet Musical</a>
+                <a href="Projet Naos.html">Projet Naos</a>
+                <a href="sexo.html">Soirées sexo</a>
+              </div>
+            </div>
+        </li>
+        <li><a href="jeunes.html">Jeunes</a>
+        <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu3()">
+              <span id="arrow3" class="arrow">▼</span>
+            </span>
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="ressources_jeunes.html">Ressources jeunes</a>
+            <a href="fiche_didentification.html">Fiche d’identification</a>
+          </div>
+        </div>
+        </li>
+        <li><a href="parents_ressources.html">Parents et Ressources</a></li>
+        <li><a href="emplois.html">Emplois</a></li>
+    <div class="nav-right">
+      <i id="toggleIcon" class="fa-solid fa-sun" onclick="toggleDarkMode()" title="Changer le mode"></i>
+    </div>
+</div>
+    </nav>
+  </header>
+  <!-- fin Haut de la Page -->
+
+  
+<h2 class="text-note">Pour les parents qui ont des questions, c’est la place!</h2><hr>
+<section class="texte-accueil text-link " style="font-size: large;">
+    <p>À L’Hôte Maison, il peut arrivé que certains parents ai des questions sur notre magnifique Maison de Jeunes.<br>(en construction)</p>
+    <p>Nous avons monté ici une liste de ressources générales ainsi que pour les parents de nos jeunes.</p>
+    <p><strong>Parentscyberavertis:</strong><br><br>Site internet sur la sécurité de vos enfants sur internet.<br><br><a href="https://parentscyberavertis.ca/app/fr/">https://parentscyberavertis.ca/app/fr/</a></p>
+    <p><strong>LigneParents:</strong><br><br>Site internet offrant diverses informations et conseils pour les parents. Ils offrent également une ligne d’écoute pour les parents.<br><br>1 800 361-5085<br><br><a href="https://www.ligneparents.com/LigneParents">https://www.ligneparents.com/LigneParents</a></p>
+    <p><strong>Première ressource</strong><br><br>Première Ressource, aide aux parents offre de l’accompagnement gratuit et confidentiel aux parents partout au Québec sur des sujets reliés au rôle parental et à la parentalité comme le sommeil, la discipline, le développement, la scolarité, la gestion des écrans, la gestion des émotions, l’adolescence, etc. Les consultations se font par téléphone, courriel ou clavardage du lundi au vendredi de 8 h à 17 h.<br><br>
+    Si vous cherchez d’autres ressources, consultez le site Parents.Quebec.<br><br><a href="https://parents.quebec/">https://parents.quebec/</a></p>
+    <p><strong>Halte la Ressource</strong>
+    <br><br>Organisme pour les mères et pères monoparentales. Halte offre des activités d’accompagnement et des ressource pour les gens qui ont des questions.
+    <br><br><a href="https://haltelaressource.org/activites.html">https://haltelaressource.org/activites.html</a></p>
+    <p><strong>811</strong>
+    <br><br>Le 811 est un service de consultation téléphonique disponible partout au Québec. Composer le 811 vous permet de joindre un.e infirmier.e en cas de problèmes de santé mineurs ou un.e professionnel.le en intervention psychosociale en cas de problème psychosocial. Les intervenant.e.s du 811 peuvent aussi vous informer sur les services disponibles dans le réseau de la santé et sur les organismes communautaires de votre région.
+    </p>
+    <p style="padding-bottom: 40px;"><strong>CLSC</strong><br><br>
+    Organisme public faisant partie du réseau de la santé, le CLSC a comme mission d’offrir, en première ligne, des services de santé et des services sociaux courants à la population du territoire ou du quartier qu’il dessert.</p>
+</section>
+
+
+    <!-- bas de la Page -->
+     <hr>
+
+<div class="contact-grid">
+  <div style="text-align: center;">
+    <h2 class="text-note">Nous contacter</h2>
+    <div><b>Adresse:</b> 1555 rue de Bellechasse, Montréal (QC), H2G 1N9</div>
+    <div><b>Téléphone:</b> (514) 273-0805</div>
+    <ul>
+      <li>Ext. 101: Étienne Vézina, directeur par intérim</li>
+      <li>Ext. 103: Intervenants – Espace des Jeunes</li>
+    </ul>
+    <div class="text-link"><b>Courriel:</b> 
+      <a href="mailto:info@lhotemaison.org">info@lhotemaison.org</a>
+    </div>
+    <br>
+  </div>
+
+  <div style="text-align: center;">
+    <h2 class="text-note">Heures d’ouverture (année scolaire 2025-2026)</h2>
+    <ul>
+      <li>Lundi au mercredi : 15h00 à 20h00</li>
+      <li>Jeudi et vendredi : 15h00 à 21h00</li>
+      <li>Ces heures sont sujettes à changements.<br>Consultez notre Instagram pour les détails.</li>
+    </ul>
+  </div>
+</div>  
+            <br>
+            <h2 class="text-note">Suivez-nous !</h2>
+            <p style="text-align: center;">
+            <a href="https://fr-ca.facebook.com/lhote.maison" target="_blank"><i id="linkIcon" class="fab fa-facebook facebook-icon"></i></a>
+            <a href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg" target="_blank"><i id="linkIcon" class="fab fa-youtube youtube-icon"></i></a>
+            <a href="https://www.instagram.com/lhotemaison" target="_blank"><i id="linkIcon" class="fab fa-instagram instagram-icon"></i></a>
+            <a href="https://www.tiktok.com/@lhotemaison?lang=fr"><i id="linkIcon_ticktok" class="fa-brands fa-tiktok tiktok-icon"></i></a>
+          </p>
+            <!-- fin bas de la Page -->
+    </body>
+</html><!DOCTYPE html>

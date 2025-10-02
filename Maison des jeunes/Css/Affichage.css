@@ -1,0 +1,198 @@
+/* 🌐 BASE */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f9f9f9;  /*121212*/
+  color: #333;
+  margin-top: 130px; /* ajuste selon la hauteur de ta bannière */
+  overflow-x: hidden;
+}
+
+i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+
+hr {
+  margin: 10px auto 30px;
+  width: 60%;
+  border: 1px solid #ccc;
+}
+
+/* 🧱 LAYOUT GRILLE */
+.grid {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.direction {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.animation,
+.stagiaires,
+.partenaires,
+.administration,
+.photos {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* 🧩 COMPOSANTS */
+.card {
+  background: rgb(237, 237, 237);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bio {
+  margin-top: 10px;
+  font-size: 0.95em;
+  line-height: 1.5;
+  font-family: Times New Roman;
+}
+
+/* 📱 Responsive override */
+@media screen and (max-width: 945px) {
+  body {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 790px) {
+  body {
+    margin-top: 0px;
+  }
+}
+
+.texte-accueil {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.texte-accueil p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.texte-accueil li {
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+/*1*/
+.video-container {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(135deg, rgb(0, 0, 106), yellow);
+  border-radius: 15px;
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.4),
+    0 6px 6px rgba(0, 0, 0, 0.3);
+  
+  /* ratio 16:9 */
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe, video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.35),
+    0 4px 10px rgba(0, 0, 0, 0.25);
+  object-fit: cover; /* adapte bien la vidéo */
+}
+
+
+
+/*bas de page*/
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      padding: 0 20px; box-sizing: border-box;
+    }
+    .Calendrier,
+    .commentairesEtAvis,
+    .video-section {
+      padding: 0 20px; box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .video-section {
+      padding: 0 20px; box-sizing: border-box;
+    }
+  }
+  
+  @media (max-width: 1300px) {
+    .sérigraphie  {
+      padding: 0 20px; box-sizing: border-box;
+    }
+  }
+
+  .bouton_a {
+    background-color: rgb(0, 0, 106);
+    border:2px #ffd700 solid;
+    padding:20px;
+    display: inline-block;
+    border-radius: 10px;
+    color: #ffd700;
+    text-decoration: none;
+  }
+
+  .bouton_a:hover {
+    background-color: #ffd700;
+    border:2px rgb(0, 0, 106) solid;
+    color: rgb(0, 0, 106);
+    transition: 0.3s;
+  }
+
+  .citation {
+    color: #666666;
+    font-size: 1.125rem;
+    font-style: italic;
+  }

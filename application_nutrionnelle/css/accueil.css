@@ -1,0 +1,108 @@
+
+.bloc_centre > .container-fluid {
+	text-align: center;
+	padding: 0px;
+}
+.bloc_bas {
+	color: white;
+	margin-bottom: 0px;
+}
+
+/*NAVBAR*/
+.navtitle {
+	width: 70px;
+	color: white;
+	font-size: 35px;
+	font-style: oblique;
+	font-weight: bold;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-top: 6px !important;
+	padding-bottom: 8px !important;
+}
+.navtitle:hover{
+	color: white !important;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-link{
+	color: white !important;
+	font-size: 25px !important;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+}
+.navlinkactive {
+	color:gray !important;
+}
+.nav-link:hover{
+	color: white !important;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.BtnDeconnexion {
+	height: 40px; 
+	display: flex; 
+	align-items: center; 
+	margin-top: 6px;
+}
+.Titre {
+	color: white;
+}
+.dropdown-item:hover{
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	border-radius: px;
+}
+
+/*HEADLINE*/
+.imgheadline{
+	background-image: url(../images/accueil.jpg);	
+	margin: 0px;
+}
+.textheadline {
+	color: white;
+	background: rgba(0, 0, 0, 0.60);
+	border-radius: 25px;
+}
+.icon-link {
+	color: white;
+	text-decoration: none;
+}
+    
+.charts-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+li
+{
+  font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+
+/* Gilles */
+.div-des-bouton { /* DÉBUTER & CONSULTER */
+	padding-bottom: 20px;
+}
+.progress-circle {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.btnanime {
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.btnanime:hover {
+  transform: scale(1.1);
+}
+.container_historique{
+	border: solid 2px rgba(141, 141, 141, 0.5) !important;
+	background: rgba(32, 32, 32, 0.7) !important;
+}

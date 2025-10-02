@@ -1,0 +1,166 @@
+.bloc_centre > .container-fluid {
+	text-align: center;
+	padding: 0px;
+}
+.bloc_bas {
+	color: white;
+	margin-bottom: 0px;
+}
+/*NAVBAR*/
+.navtitle {
+	width: 70px;
+	color: white;
+	font-size: 35px;
+	font-style: oblique;
+	font-weight: bold;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	padding-top: 6px !important;
+	padding-bottom: 8px !important;
+}
+.navtitle:hover{
+	color: white !important;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-link{
+	color: white !important;
+	font-size: 25px !important;
+	border-radius: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+}
+.navlinkactive {
+	color:gray !important;
+}
+.nav-link:hover{
+	color: white !important;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.BtnDeconnexion {
+	height: 40px; 
+	display: flex; 
+	align-items: center; 
+	margin-top: 6px;
+}
+.Titre {
+	color: white;
+}
+.dropdown-item:hover{
+	background-color: rgba(255, 255, 255, 0.2) !important;
+	border-radius: 5px;
+}
+
+/*HEADLINE*/
+.textheadline {
+	color: white;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 25px;
+}
+.icon-link {
+	color: white;
+	text-decoration: none;
+}
+.imgalimentheadline {
+	background-image: url(../images/food.jpg);
+	background-repeat:repeat;
+	margin: 0px;
+	min-height: 698px;
+}
+.charts-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+/*AMINE*/
+#date
+{
+  border:"1px solid #000000";
+  border-radius:10px;
+  transition: "all 0.2 ease";
+}
+label 
+{
+	font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+h5
+{
+  font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+li
+{
+  font-weight: bold;
+	margin-bottom: 5px;
+	display: block;
+}
+#messageAliment {
+  margin-top: 15px;
+  font-weight: bold;
+  transition: opacity 1s;
+}
+.hidden {
+	visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.ListeAlimentDiv{
+	display: grid;
+	grid-template-columns: 300px 1fr 300px;
+	gap: 30px;
+	align-items: start;
+	grid-column: 2;
+	border: solid 2px rgba(141, 141, 141, 0.5);
+	background: rgba(32, 32, 32, 0.7);
+	padding: 50px;
+	border-radius: 25px;
+
+}
+#infoCard {
+  grid-column: 1; 
+}
+#totalinfoCard {
+  grid-column: 3;
+}
+li.list-group-item:hover {
+  cursor: pointer;
+}
+li.list-group-item {
+	background: none;
+}
+@keyframes slideInTop {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in {
+  animation: slideInTop 0.4s ease-out;
+}
+#messageEau {
+  transition: opacity 1s;
+  font-weight: bold;
+}
+.btnanime {
+  transition: transform 0.2s ease-in-out !important;
+}
+
+.btnanime:hover {
+  transform: scale(1.1);
+}

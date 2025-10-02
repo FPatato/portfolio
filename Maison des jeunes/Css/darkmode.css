@@ -1,0 +1,144 @@
+/* 🌞 Mode clair */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.text-link a {
+  color: blue;
+}
+
+.text-link a:hover {
+  color: rgb(186, 1, 186);
+}
+
+.text-note {
+  color: rgb(0, 0, 106);
+}
+
+/* 🌙 Mode sombre */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .text-link a {
+  color: lightblue;
+}
+
+body.dark-mode .text-link a:hover {
+  color:red;
+}
+
+body.dark-mode .text-note {
+  color: yellow;
+}
+
+body.dark-mode .card {
+  background: rgb(41, 41, 41);
+  box-shadow: 0 0 10px gray;
+}
+
+body.dark-mode .site-header {
+  color: rgb(0, 0, 158);
+}
+/* 🎨 Icône toggle */
+#toggleIcon {
+  color: yellow; /* icône jaune */
+  transition: transform 0.3s ease;
+}
+
+#toggleIcon:hover {
+  transform: rotate(20deg);
+}
+
+#linkIcon, #linkIcon_ticktok {
+  color: rgb(0, 0, 106);
+}
+
+body.dark-mode #linkIcon, body.dark-mode #linkIcon_ticktok {
+  color: yellow;
+}
+
+#linkIcon:hover {
+  transform: rotate(20deg);
+}
+#linkIcon_ticktok:hover { 
+  color: #000000;
+  transform: rotate(20deg);
+}
+
+.facebook-icon:hover {
+  background: #1877F2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.youtube-icon:hover {
+  background: #FF0000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.instagram-icon:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tiktok-icon:hover {
+  color: #000000; /* noir au premier plan */
+  text-shadow: 
+    2px 2px 0 #25F4EE,   /* bleu/turquoise en bas à droite */
+   -2px -2px 0 #FE2C55;  /* rose/rouge en haut à gauche */
+  transition: transform 0.3s ease;
+}
+
+.tiktok-icon:hover {
+  transform: scale(1.2); /* petit zoom au hover */
+}
+
+
+
+
+    body.dark-mode .dropdown-content {
+      background-color: rgb(41, 41, 41);
+      box-shadow: 0px 8px 16px gray;
+      border: 1px solid #333;
+    }
+
+    body.dark-mode .dropdown-content a {
+      color: white;
+    }
+    
+    .dropdown-content a:hover{
+      color: rgb(0, 0, 145);
+      border-bottom: 2px solid rgb(0, 0, 145);
+    }
+
+    body.dark-mode .dropdown-content a:hover{
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
+    }
+
+    body.dark-mode .dropdown-content a:hover {
+      background-color: rgb(47, 47, 47);;
+    }
+
+    body.dark-mode .citation {
+    color: #bdbcbc;
+  }
+
+  .Naos {
+    color: green;
+  }
+  body.dark-mode .Naos {
+    color: lightgreen;
+  }
+  .Naos2 {
+    color: #0000ff;;
+  }
+  body.dark-mode .Naos2 {
+    color: lightblue;
+  }

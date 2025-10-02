@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projet Musical - L'Hôte Maison</title>
+  <link rel="icon" href="../Images/logo.webp" type="image/webp">
+        <link rel="stylesheet" href="..\Css\Affichage.css">
+        <link rel="stylesheet" href="..\Css\en-tete.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="..\Css\darkmode.css">
+        <script src="..\Javascript\darkmode.js" defer></script>
+        <script src="..\Javascript\script.js" defer></script>
+    </head>
+    <body>
+  <!-- Haut de la Page -->
+<header class="site-header">
+    <!-- Diaporama -->
+    <div class="slideshow">
+      <img src="..\Images\IMG_5216.png" alt="Slide 1" class="slide active">
+      <img src="..\Images\IMG_5217.png" alt="Slide 2" class="slide">
+      <img src="..\Images\IMG_5218.png" alt="Slide 3" class="slide">
+    </div>
+    <div class="logo-titre">
+      <a href="Jimmy.html" style="padding-right: 20px;"><img src="..\Images\logo.webp" alt="Logo L'hote Maison"></a>
+      <div class="texte-titre">
+        <a href="accueil.html" style="color: #ffd700; text-decoration: none;">
+        <h1>L'HÔTE MAISON - MAISON DE JEUNES</h1>
+        <div>Pour les jeunes de 12 à 17 ans dans Rosemont-La Petite-Patrie</div>
+        </a>
+      </div>
+    </div>
+
+
+    <nav id="main-nav" class="nav-bar">
+        <button class="menu-toggle" aria-label="Menu mobile" style="text-align: center;">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a>
+          <!-- Premier menu -->
+          <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu()">
+              <span id="arrow" class="arrow">▼</span>
+            </span>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Conseil_dadministration.html">Conseil d’administration</a>
+              <a href="équipe.html">Équipe</a>
+              <a href="partenaires.html">Partenaires</a>
+              <a href="Bilans_annuels.html">Bilans annuels</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="bourse_jjr.html">Bourse JJR</a></li>
+        <li><a href="Activités_projets.html">Activités et projets</a>
+          <div class="dropdown">
+            <!-- Deuxième menu -->
+            <div class="dropdown">
+              <span class="dropdown-button" onclick="toggleMenu2()">
+                <span id="arrow2" class="arrow">▼</span>
+              </span>
+              <div id="myDropdown2" class="dropdown-content">
+                <a href="Activités_sportives.html">Activités sportives</a>
+                <a href="Ateliers_dimprovisation.html">Ateliers d’improvisation</a>
+                <a href="Page erreur.html">Camp d’accueil PPS</a>
+                <a href="Conseil_des_jeunes.html">Conseil des jeunes</a>
+                <a href="Périodes libres.html">Périodes libres</a>
+                <a href="sérigraphie.html">Projet de sérigraphie</a>
+                <a href="Projet Musical.html">Projet Musical</a>
+                <a href="Projet Naos.html">Projet Naos</a>
+                <a href="sexo.html">Soirées sexo</a>
+              </div>
+            </div>
+        </li>
+        <li><a href="jeunes.html">Jeunes</a>
+        <div class="dropdown">
+            <span class="dropdown-button" onclick="toggleMenu3()">
+              <span id="arrow3" class="arrow">▼</span>
+            </span>
+          <div id="myDropdown3" class="dropdown-content">
+            <a href="ressources_jeunes.html">Ressources jeunes</a>
+            <a href="fiche_didentification.html">Fiche d’identification</a>
+          </div>
+        </div>
+        </li>
+        <li><a href="parents_ressources.html">Parents et Ressources</a></li>
+        <li><a href="emplois.html">Emplois</a></li>
+    <div class="nav-right">
+      <i id="toggleIcon" class="fa-solid fa-sun" onclick="toggleDarkMode()" title="Changer le mode"></i>
+    </div>
+</div>
+    </nav>
+  </header>
+  <!-- fin Haut de la Page -->
+
+
+
+
+    <h2 class="text-note">La Musique à L’Hôte Maison</h2><hr>
+    <div class="grid Calendrier">
+   <div class="card">
+     <!-- libre image -->
+      <img src="../Images/musique.webp" alt="Musique" width="400">
+</div></div>
+    <section  class="texte-accueil">
+        <p>Le projet musical à L’Hôte Maison a commencé avant le déménagement à la demande des jeunes. Nous avons commencé par des ateliers d’improvisation musicale. Après le déménagement, nous avons obtenu du matériel tel qu’un piano, un clavier, une guitare, une basse et une batterie. Plusieurs ont été donnés par des personnes généreuses de la communauté. Le but des ateliers de musique est de donner la chance au jeune de tous les niveaux d’apprendre la musique ou d’améliorer leurs compétences. Nous avons eu plusieurs invité-es spéciaux depuis le début du projet qui sont venus donner des ateliers divers et variés, tel que Louis Valiquette des Saint-Catharines et Gaetan Troutet des Wonder Trois Quatre!</p>
+    </section>
+    <div class="grid Calendrier">
+    <div class="card">
+     <!-- libre image -->
+      <img src="../Images/musique1.webp" alt="Musique" width="400">
+</div></div>
+
+    <section class="texte-accueil">
+        <p>Que ce soit de la percussion, du beat-box, de l’improvisation ou du scream métal, il y en a pour tous les goûts et les niveaux!</p>
+    </section>
+
+    <h2 class="text-note">Le Projet Band</h2><hr>
+    <div class="grid Calendrier">
+    <div class="card">
+     <!-- libre image -->
+      <img src="../Images/musique_band.webp" alt="Musique" width="400">
+</div></div>
+    <section class="texte-accueil">
+        <p>Le projet band est d’abord partie d’un besoin. Il n’y a pas d’option musique à l’école Père-Marquette. Les jeunes qui se passionnent pour la musique ont de la difficulté à suivre leur passion. Le but est de donner un projet pour pallier à ce manque. Nous apprenons des chansons, faisons des ateliers d’apprentissage et montons un spectacle dans l’espace de quelques mois. Les jeunes du projet ont participé par le passé à un talent show et une fête familiale. Le but est de permettre aux jeunes d’apprendre, leur donner de la confiance et un sentiment d’appartenance.</p>
+
+    </section>
+    <h2 class="text-note">L’équipe de Formation</h2><hr>
+    <section class="texte-accueil">
+        <p><span style="color: #ff00ff;"><em><strong>Patrick Julien</strong></em></span>: Créateur du projet, Patrick fait de la musique depuis un peu plus de 10 ans. Iel fait partie d’un groupe avec Étienne Vézina et a de l’expérience avec la composition, l’improvisation musicale et la performance.</p>
+        <p style="padding-bottom: 40px;"><span style="color: #00ff00;"><em><strong>Étienne Vézina</strong></em></span>: Étienne a été appelé en renfort pour couvrir l’aspect plus théorique et poussé de la musique. Musicien depuis plus de 10 ans, il fait partie de plusieurs groupes de musique et compose depuis longtemps. Il compose, enseigne, mixe et joue.</p>
+    </section>
+
+
+
+
+
+
+    <!-- bas de la Page -->
+     <hr>
+
+<div class="contact-grid">
+  <div style="text-align: center;">
+    <h2 class="text-note">Nous contacter</h2>
+    <div><b>Adresse:</b> 1555 rue de Bellechasse, Montréal (QC), H2G 1N9</div>
+    <div><b>Téléphone:</b> (514) 273-0805</div>
+    <ul>
+      <li>Ext. 101: Étienne Vézina, directeur par intérim</li>
+      <li>Ext. 103: Intervenants – Espace des Jeunes</li>
+    </ul>
+    <div class="text-link"><b>Courriel:</b> 
+      <a href="mailto:info@lhotemaison.org">info@lhotemaison.org</a>
+    </div>
+    <br>
+  </div>
+
+  <div style="text-align: center;">
+    <h2 class="text-note">Heures d’ouverture (année scolaire 2025-2026)</h2>
+    <ul>
+      <li>Lundi au mercredi : 15h00 à 20h00</li>
+      <li>Jeudi et vendredi : 15h00 à 21h00</li>
+      <li>Ces heures sont sujettes à changements.<br>Consultez notre Instagram pour les détails.</li>
+    </ul>
+  </div>
+</div>  
+            <br>
+            <h2 class="text-note">Suivez-nous !</h2>
+            <p style="text-align: center;">
+            <a href="https://fr-ca.facebook.com/lhote.maison" target="_blank"><i id="linkIcon" class="fab fa-facebook facebook-icon"></i></a>
+            <a href="https://www.youtube.com/channel/UCCoOsuuxjMWhZb6A9pXWagg" target="_blank"><i id="linkIcon" class="fab fa-youtube youtube-icon"></i></a>
+            <a href="https://www.instagram.com/lhotemaison" target="_blank"><i id="linkIcon" class="fab fa-instagram instagram-icon"></i></a>
+            <a href="https://www.tiktok.com/@lhotemaison?lang=fr"><i id="linkIcon_ticktok" class="fa-brands fa-tiktok tiktok-icon"></i></a>
+          </p>
+            <!-- fin bas de la Page -->
+    </body>
+</html>

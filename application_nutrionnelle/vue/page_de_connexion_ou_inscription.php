@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connexion.css">
+    <title>NutriPlus</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--MICHAEL PROULX-->
+    <!--BLOC HAUT-->
+    <div class="bloc_haut">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md bg-dark" aria-label="Eleventh navbar example">
+          <div class="container-fluid">
+            <!--Titre du nav-->
+            <a id="navtitle" class="navbar-brand" href=""><img src="../images/logo.png" style="height: 60px;"></a>
+            <div class="collapse navbar-collapse">
+
+              <!--Liste des différents liens du nav-->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="" style="color: white;">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="" style="color: white;">Aliments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="" style="color: white;">Objectifs</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">Statistiques</a>
+                  <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item" href="" style="color:white;">Statistiques Personnelles</a></li>
+                    <li><a class="dropdown-item" href="" style="color:white;">Calendrier Hebdomadaire</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--BLOC CENTRE-->
+      <div class="bloc_centre_connexion" style="min-height:703px;">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+              <!--TEXTE GAUCHE-->
+                <div class="col-lg-7 text-center text-lg-start">
+                  <!--TITRE GAUCHE-->
+                  <img src="../images/logo.png" style="height: 200px;">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">NutriPlus</h1>
+                    <!--TEXTE DU TEXTE GAUCHE-->
+                </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+              <!--FORMULAIRE-->
+              <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+              <div><b style="font-size: larger;">COMMENCER À UTILISER NUTRIPLUS!</b></div>
+              <br>
+              <a href="Page_connexion/Connexion.php" class="w-100 btn btn-lg btn-primary mb-3">Se connecter</a>
+              <a href="page_creations/inscription.php" class="btn btn-secondary w-100">Créer un Compte</a>
+            </form>
+            </div>
+            </div>
+            <!--FIN CONTAINER-->
+        </div>
+        <br><br><br>
+        <!--FIN BLOC CENTRE-->
+      </div>
+      <?php require_once '../include/footer.php'?>
+      </div> 
+</body>
+</html>
