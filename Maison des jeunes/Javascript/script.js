@@ -66,8 +66,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelector('.nav-bar ul');
   const navBar = document.querySelector('.nav-bar');
 
-  toggleBtn.addEventListener('click', () => {
+  // Toggle menu on button click
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Empêche le clic de se propager au document
     navLinks.classList.toggle('open');
     navBar.classList.toggle('nav-open');
+  });
+
+  // Ferme le menu si on clique ailleurs
+  document.addEventListener('click', (e) => {
+    const clickedInsideMenu = navBar.contains(e.target);
+    const clickedToggle = toggleBtn.contains(e.target);
+
+    if (!clickedInsideMenu && !clickedToggle) {
+      navLinks.classList.remove('open');
+      navBar.classList.remove('nav-open');
+    }
+  });
+
+  // Ferme le menu si on scrolle
+  window.addEventListener('scroll', () => {
+    navLinks.classList.remove('open');
+    navBar.classList.remove('nav-open');
   });
 });
