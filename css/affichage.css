@@ -1,0 +1,91 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 2rem;
+}
+
+.site-gallery {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.site-gallery h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.site-card {
+  background: #292929;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px gray;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.site-card:hover {
+  transform: translateY(-5px);
+}
+
+.site-card img {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.site-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.site-card p {
+  font-size: 0.95rem;
+}
+
+.site-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0078D4;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.site-card a:hover {
+  background: #005fa3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .site-gallery h2 {
+    font-size: 1.5rem;
+  }
+
+  .site-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .site-card p {
+    font-size: 0.9rem;
+  }
+}
