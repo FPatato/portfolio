@@ -1,91 +1,175 @@
+/* Style rétro années 2000 */
 body {
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #000080; /* Bleu marine */
+  color: #FFFF00; /* Jaune vif */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* motif étoilé */
+}
+
+h1, h2, h3 {
+  text-shadow: 2px 2px 4px #FF00FF; /* ombre rose fluo */
+  font-family: 'Arial Black', Gadget, sans-serif;
+  margin-top: 20px;
 }
 
 header h1 {
+  padding-top: 80px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border: 5px ridge #00FFFF;
+  padding: 20px;
+  box-shadow: 0 0 20px #FF00FF;
+}
+
+a {
+  color: #00FFFF;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #FF0000;
+  background-color: #FFFF00;
+}
+
+button {
+  background-color: #FF00FF;
+  color: white;
+  font-size: 16px;
+  font-family: 'Comic Sans MS';
+  border: 3px outset #FFFF00;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00FFFF;
+  color: black;
+  border: 3px inset #FF00FF;
+}
+
+.ligne {
+  display: flex;
+  justify-content: space-between; /* pousse les éléments aux extrémités */
+  align-items: center; /* aligne verticalement */
+  padding-left: 100px;padding-right: 100px;
+}
+
+.boite_texte {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-family: 'Comic Sans MS', cursive;
+  border: 4px ridge #000000;
+  padding: 20px;
+  box-shadow: 0 0 15px #FF00FF;
+  width: 80%;
+  margin: 20px 20px;
+  font-size: large;
+}
+
+.boite_texte:hover {
+  background-color: #FFFF00;
+  color: #FF0000;
+  box-shadow: 0 0 20px #00FFFF;
+}
+
+.boite_texte2 {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-family: 'Comic Sans MS', cursive;
+  border: 4px ridge #000000;
+  padding: 20px;
+  margin: 20px 20px;
+  box-shadow: 0 0 15px #FF00FF;
+  font-size: large;
+}
+
+.boite_texte2:hover {
+  background-color: #FFFF00;
+  color: #FF0000;
+  box-shadow: 0 0 20px #00FFFF;
+}
+
+.navbar {
+  background-color: #FF0000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  border-bottom: 4px ridge #FFFF00;
+  box-shadow: 0 0 10px #00FFFF;
+  padding: 10px 0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #FFFF00;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px outset #000;
+  background-color: #0088ff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #FFFF00;
+  color: #FF00FF;
+  border: 2px inset #000;
+}
+
+.cartes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #000080;
+}
+
+.carte {
+  width: 220px;
+  background-color: #FF00FF;
+  border: 4px ridge #FFFF00;
+  box-shadow: 0 0 15px #00FFFF;
+  font-family: 'Comic Sans MS', cursive;
+  color: #FFFF00;
   text-align: center;
-  padding: 1.5rem 1rem;
-  font-size: 2rem;
+  padding: 10px;
+  transition: transform 0.3s;
 }
 
-.site-gallery {
-  padding: 2rem 1rem;
-  text-align: center;
+.carte:hover {
+  transform: scale(1.05);
+  background-color: #FFFF00;
+  color: #FF00FF;
+  box-shadow: 0 0 20px #FF0000;
 }
 
-.site-gallery h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.site-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.site-card {
-  background: #292929;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px gray;
-  padding: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.site-card:hover {
-  transform: translateY(-5px);
-}
-
-.site-card img {
+.carte img {
   width: 100%;
   height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.site-card h3 {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.25rem;
-}
-
-.site-card p {
-  font-size: 0.95rem;
-}
-
-.site-card a {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #0078D4;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-.site-card a:hover {
-  background: #005fa3;
-}
-
-/* Responsive tweaks */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  .site-gallery h2 {
-    font-size: 1.5rem;
-  }
-
-  .site-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .site-card p {
-    font-size: 0.9rem;
-  }
+  border: 3px inset #000;
+  margin-bottom: 10px;
 }
