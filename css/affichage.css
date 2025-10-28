@@ -55,23 +55,16 @@ button:hover {
   border: 3px inset #FF00FF;
 }
 
-.ligne {
-  display: flex;
-  justify-content: space-between; /* pousse les éléments aux extrémités */
-  align-items: center; /* aligne verticalement */
-  padding-left: 100px;padding-right: 100px;
-}
-
 .boite_texte {
   background-color: #FF0000;
   color: #FFFFFF;
   font-family: 'Comic Sans MS', cursive;
   border: 4px ridge #000000;
   padding: 20px;
-  box-shadow: 0 0 15px #FF00FF;
-  width: 80%;
+  text-align: center;
   margin: 20px 20px;
-  font-size: large;
+  box-shadow: 0 0 15px #FF00FF;
+  font-size: x-large;
 }
 
 .boite_texte:hover {
@@ -80,21 +73,20 @@ button:hover {
   box-shadow: 0 0 20px #00FFFF;
 }
 
-.boite_texte2 {
-  background-color: #FF0000;
-  color: #FFFFFF;
-  font-family: 'Comic Sans MS', cursive;
-  border: 4px ridge #000000;
-  padding: 20px;
-  margin: 20px 20px;
-  box-shadow: 0 0 15px #FF00FF;
-  font-size: large;
+.boite_texte img {
+  max-width: 100%;
+  height: auto;
 }
 
-.boite_texte2:hover {
-  background-color: #FFFF00;
-  color: #FF0000;
-  box-shadow: 0 0 20px #00FFFF;
+.grid {
+  display: grid;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.texte {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .navbar {
